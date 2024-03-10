@@ -27,9 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $udpateTicket = "UPDATE `tickets` SET `booked_number` = booked_number + 1 WHERE `tickets`.`id` = '$ticketId'";
         mysqli_query($conn, $udpateTicket);
         if (mysqli_query($conn, $sql)) {
+            $inserted_id = mysqli_insert_id($conn);
             $response = array(
                 'status' => 'success',
-                'message' => 'Ticket created successfully'
+                'message' => 'Ticket created successfully',
+                'inserted_id' => $inserted_id
             );
         } else {
             $response = array(
@@ -65,4 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Close the database connection
+// Close the database connection
+
 mysqli_close($conn);

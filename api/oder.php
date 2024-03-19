@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'status' => 'error',
             'message' => 'Error placing order: ' . mysqli_error($conn)
         );
-    }
+    }      
 
     // Convert the response array to JSON format
     $json_response = json_encode($response);

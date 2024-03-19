@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             $response = array(
                 'status' => 'error',
                 'message' => 'Ticket not found'
-            );
+            );    
 
             $json_response = json_encode($response);
 

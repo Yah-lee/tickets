@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'message' => 'Ticket created successfully'
         );
     } else {
-        $response = array(
+        $response = array(     
             'status' => 'error',
             'message' => 'Error creating ticket: ' . mysqli_error($conn)
         );

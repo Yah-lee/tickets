@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         );
     } else {
         // Extract ticket data from the decoded JSON
-        $ticketId = $ticketData["ticket_id"];
+        $ticketId = $ticketData["ticket_id"];     
         $priceId = $ticketData["price_id"];
         $priceType = $ticketData["price_type"];
 

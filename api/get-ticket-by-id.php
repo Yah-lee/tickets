@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $json_response = json_encode($tickets);
 
         header('Content-Type: application/json');
-
+      
         echo $json_response;
     } else {
         $response = array(

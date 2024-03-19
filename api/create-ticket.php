@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $response = array(
             'status' => 'error',
             'message' => 'All fields are required'
-        );
+        );        
     } else {
         // Extract ticket data from the decoded JSON    
         $movieTitle = $ticketData["movie_title"];

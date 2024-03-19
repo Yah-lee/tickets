@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             'status' => 'success',
             'message' => 'Login successful'
         );
-    } else {
+    } else {      
         $response = array(
             'status' => 'error',
             'message' => 'Invalid username or password'

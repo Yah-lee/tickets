@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         );
 
         $json_response = json_encode($response);
-
+       
         header('Content-Type: application/json');
 
         echo $json_response;

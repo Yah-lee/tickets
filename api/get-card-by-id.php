@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         
         echo $json_response;
     } else {
-        $response = array(
+        $response = array(        
             'status' => 'error',
             'message' => 'No tickets found'
         );

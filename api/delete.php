@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "DELETE") {
                 'status' => 'success',
                 'message' => 'Ticket deleted successfully'
             );
-        } else {
+        } else {        
             // If error, return error message
             $response = array(
                 'status' => 'error',

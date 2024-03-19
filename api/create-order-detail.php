@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 'status' => 'error',
                 'message' => 'Error creating ticket: ' . mysqli_error($conn)
             );
-        }
+        }       
     }
 
     // Convert the response array to JSON format

@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "DELETE") {
             );
         }
 
-        // Convert the response array to JSON format
+        // Convert the response array to JSON format      
         $json_response = json_encode($response);
 
         // Set the content type header to application/json
